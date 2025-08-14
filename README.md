@@ -10,6 +10,15 @@ This **project compares the 2024 financial performance of three major retail com
 
 These companies are among the biggest in retail. The goal is to see which one had the strongest financial health in 2024 using key financial ratios.
 
+## Tools Used
+
+- Python  
+- yfinance library  
+- Pandas  
+- Jupyter Notebook
+- Seaborn
+- Matplotlib
+
 ## Methodology
 
 Using the `yfinance` Python library, I downloaded financial data for all three companies directly from Yahoo Finance. The data includes:
@@ -44,7 +53,7 @@ To compare the companies fairly, I built a scoring model:
 | ROI             | 30%    |    It is the most important because good returns are crucial for growth.          |
 | Gross Margin    | 25%    |    Since retail depends a lot on controlling costs of goods sold, this ratio is very important.  |
 | Return on Sales | 10%    |Shows how efficiently the company turns sales into profit.            |
-| Current Ratio   | 10%    | Measures short-term financial health and liquidity.        |
+| Current Ratio   | 10%    | Measures short term financial health and liquidity.        |
 | Quick Ratio     | 5%     | A stricter liquidity test than the Current Ratio, but slightly less critical, so it has a smaller weight.                 |
 | Asset Turnover  | 10%    | Shows how well the company uses its assets to generate sales, important for retail low margin environment.             |
 | Debt-to-Equity  | 5%     | Retail companies usually carry moderate debt, so it has the lowest weight.         |
@@ -72,11 +81,4 @@ The final score is out of 100, where higher means better overall financial healt
 
 Based on this analysis, **Target currently shows the strongest financial position** among these retailers.
 
-## Tools Used
 
-- Python  
-- yfinance library  
-- Pandas  
-- Jupyter Notebook
-- Seaborn
-- Matplotlib
